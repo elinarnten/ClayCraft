@@ -39,3 +39,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.productContainer {
+  height: 20rem;
+}
+
+.footerContainer {
+  height: auto;
+  background-color: black;
+}
