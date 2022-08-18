@@ -32,7 +32,12 @@
           <button>Take me there</button>
         </div>
       </div>
-      <h1 class="flex align-center justify-center">New in ✨</h1>
+      <h1
+        class="flex align-center justify-center"
+        style="font-size: 64px; margin: 1rem"
+      >
+        New in ✨
+      </h1>
       <div
         class="productContainer flex align-center justify-center justify-evenly"
       >
@@ -56,21 +61,33 @@
         </div>
       </div>
     </main>
-    <footer class="footerContainer">
-      <div>
-        <h1>hej</h1>
+    <footer class="footerContainer flex justify-evenly">
+      <div class="about" style="color: white">
+        <h2>About Us</h2>
+        <p style="font-size: 15px">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+          commodi quis omnis <br />
+          soluta a vitae eaque blanditiis cumque in quibusdam quod quia, debitis
+          doloremque officia <br />
+          mollitia unde possimus non officiis. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. <br />
+          Minima illum minus mollitia harum excepturi, molestiae provident
+          doloribus enim corrupti <br />
+          itaque maxime, quod eveniet earum repellat aspernatur in animi sed
+          quis?
+        </p>
       </div>
+      <!-- <div class="line"></div> -->
       <div class="contact flex column">
-        <p>Kontakta oss!</p>
-        <form action="">
-          <label for="name">Ditt namn</label>
-          <input type="text" placeholder="Ditt namn..." />
+        <h2 style="color: white">Contact us!</h2>
 
-          <label for="email">Email</label>
-          <input type="email" placeholder="Email..." />
+        <label for="name">Your name</label>
+        <input type="text" placeholder="Your name..." />
 
-          <input type="submit" value="Skicka" />
-        </form>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email..." />
+
+        <input type="submit" value="Send" />
       </div>
     </footer>
   </body>
