@@ -40,8 +40,8 @@ button:hover {
 .centeredBox {
   position: absolute;
   background-color: white;
-  width: 30rem;
-  height: 15rem;
+  max-width: 30rem;
+  max-height: 15rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -53,6 +53,7 @@ button:hover {
 
 .productCard {
   background-color: #f2f2f2;
+  margin: 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,7 @@ button:hover {
 }
 
 .footerContainer {
-  height: auto;
+  height: 800px;
   background-color: black;
   padding: 2rem;
 }
@@ -77,8 +78,45 @@ button:hover {
   justify-content: center;
 }
 
-.contact {
-}
 .contact label {
   color: white;
+}
+
+@media all and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .footerContainer {
+    flex-wrap: wrap;
+    height: 12rem;
+    justify-content: center;
+  }
+
+  .productContainer {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+  }
+  .about h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .centeredBox {
+    padding: 2rem;
+    height: 500px;
+  }
+  .campaignImg {
+    height: 900px;
+  }
 }
