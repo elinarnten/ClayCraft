@@ -15,7 +15,7 @@
       </div>
     </header>
     <main class="mainContainer">
-      <div class="menu flex align-center justify-center justify-evenly wrap">
+      <div class="menu flex align-center justify-center justify-evenly">
         <p>New Arrivals</p>
         <p>All Mugs</p>
         <p>Sale</p>
@@ -28,7 +28,9 @@
         />
         <div class="centeredBox flex align-center justify-center column">
           <img style="height: 90px" src="img/logo.png" alt="logo" />
-          <h1 style="font-size: 64px; margin: 1rem">Summer sale!</h1>
+          <h1 style="font-size: 64px; margin: 1rem; text-align: center">
+            Summer sale!
+          </h1>
           <button>Take me there</button>
         </div>
       </div>
@@ -63,8 +65,10 @@
     </main>
     <footer class="footerContainer flex justify-evenly">
       <div class="about" style="color: white">
-        <h2>About Us</h2>
-        <p style="font-size: 15px">
+        <h2 style="color: #ffe400; margin-top: 10px; margin-bottom: 10px">
+          About Us
+        </h2>
+        <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
           commodi quis omnis <br />
           soluta a vitae eaque blanditiis cumque in quibusdam quod quia, debitis
@@ -79,13 +83,20 @@
       </div>
       <!-- <div class="line"></div> -->
       <div class="contact flex column">
-        <h2 style="color: white">Contact us!</h2>
+        <h2 style="color: #ffe400; margin: 10px">Contact us!</h2>
 
         <input type="text" placeholder="Your name..." />
 
         <input type="email" placeholder="Email..." />
+        <textarea
+          id="message"
+          cols="20"
+          rows="5"
+          required
+          placeholder="Write here.."
+        ></textarea>
 
-        <input type="submit" value="Send" />
+        <input style="width: 4rem" type="submit" value="Send" />
       </div>
     </footer>
   </body>
